@@ -1,0 +1,7 @@
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.34,<1.0
+obsws-python>=1.7,<2.0
+python-multipart>=0.0.20,<1.0
+faster-whisper>=1.1,<2.0
+# faster-whisper 1.2.1 still passes metadata_errors, removed by PyAV 19.
+av>=11,<19
