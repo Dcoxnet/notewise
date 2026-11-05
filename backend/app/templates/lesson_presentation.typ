@@ -22,7 +22,6 @@
 #let eyebrow(body) = text(body, size: 9pt, weight: "bold", fill: accent, tracking: 1pt)
 #let slide_title(body) = text(body, size: 25pt, weight: "bold", fill: ink)
 
-// Титульный слайд
 #block(width: 100%)[
   #v(0.2in)
   #eyebrow[NOTEWISE  /  КРАТКИЙ ПЕРЕСКАЗ ЛЕКЦИИ]

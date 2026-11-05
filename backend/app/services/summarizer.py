@@ -178,9 +178,6 @@ def create_presentation_summary(
         )
         raw_slides = merged.get("slides") if isinstance(merged.get("slides"), list) else []
     if len(raw_slides) < min_slides:
-        # Large final prompts make smaller local models collapse long lessons
-        # into a few sections. Retry in chronological batches with a smaller
-        # context and a smaller slide-count target per request.
         batch_count = min(3, len(compact_notes))
         batched_slides: list[dict[str, Any]] = []
         if batch_count:

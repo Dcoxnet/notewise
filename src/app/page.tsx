@@ -66,7 +66,7 @@ export default function Home() {
         const data: SavedLesson[] = await response.json();
         if (active) setLessons(data);
       } catch {
-        // The library stays empty until the local backend is running.
+        return;
       }
     };
     void refreshLessons();

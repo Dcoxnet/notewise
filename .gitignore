@@ -21,8 +21,12 @@ __pycache__/
 /credentials/
 *.pem
 *.key
+*.p12
+*.pfx
 id_rsa
 id_ed25519
+*credentials*.json
+*service-account*.json
 
 # Local recordings, lesson data, transcripts and generated summaries
 /data/
@@ -30,29 +34,53 @@ id_ed25519
 /output/
 *.sqlite
 *.sqlite3
+*.sqlite-*
+*.sqlite3-*
 *.db
+*.db-*
 *.mp4
 *.mkv
 *.mov
 *.wav
 *.mp3
 *.m4a
-*_конспект*.pdf
-*_summary*.pdf
+*.webm
+*.flac
+*.ogg
+*.aac
+*.pdf
+*.pptx
+*.docx
 
-# Generated or machine-specific AI/editor instructions and docs
-/AGENTS.md
-/.agents/
-/.codex/
-/.aws/
-/docs/generated/
-/docs/ai-generated/
-*-ai-generated.md
-*_ai_generated.md
+# Local documents and tooling
+*.md
+!/README.md
+AGENTS.override.md
+.agents/
+.codex/
+.claude/
+.cursor/
+.windsurf/
+.gemini/
+.tastemaker/
+.aws/
+/.local/
+/docs/
+/notes/
+/reports/
+/artifacts/
+/skills/
+*.txt
+!requirements.txt
+!LICENSE.txt
 
 # Local editor and OS files
 /.idea/
+.vscode/
 /.DS_Store
+*.log
+*.bak
+*.tmp
 *.tsbuildinfo
 next-env.d.ts
 npm-debug.log*
